@@ -22,7 +22,7 @@ I.goTo( DATA.site );
 forEachAccount( DATA.demoAccounts, function(email, pass) {
 
 	// For each account, lets repeat this 10 times
-	for(var i=0; i<10; ++i) {
+	for(var i=0; i<3; ++i) {
 		// Lets reload the page
 		I.goTo( DATA.site );
 
