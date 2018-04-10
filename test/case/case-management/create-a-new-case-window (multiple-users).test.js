@@ -1,15 +1,17 @@
-////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
 //
 //  test case : open "new case" window multiple
-//  times across multiple accounts. Due to its
-//  random occurance nature
+//  times across multiple accounts. 
 //
-////////////////////////////////////////////////
+//  This is doneDue to its random occurance nature
+//
+/////////////////////////////////////////////////////////////
 
-// Include the data-config, amnd dependency function
+// Include the default config, such as site settings
 TEST.run("data-config");
 
 // This function allows the iteration of user objects
+// And performs a logout and login for each account
 TEST.run("func/auth/forEachAccount");
 
 // ForEachAccount requires the site to be loaded first
