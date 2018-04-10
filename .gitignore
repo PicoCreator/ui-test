@@ -1,0 +1,5 @@
+# Node modules
+node_modules/*
+
+# Configuration json
+uilicious-config.json
