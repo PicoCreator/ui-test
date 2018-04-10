@@ -1,5 +1,8 @@
 # Node modules
 node_modules/*
 
+# Output folder
+output/*
+
 # Configuration file
 uilicious-config.sh
