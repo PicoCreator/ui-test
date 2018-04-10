@@ -4,5 +4,8 @@ node_modules/*
 # Output folder
 output/*
 
+# Git ignoring my personal notes folder
+notes/*
+
 # Configuration file
 uilicious-config.sh
