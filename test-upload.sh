@@ -8,4 +8,4 @@ cd $DIR;
 source ./test-shell-setup.sh
 
 # Export the project to the current directory
-uilicious-cli run -u "$UILICIOUS_EMAIL" -p "$UILICIOUS_PASS" "$UILICIOUS_PROJ" "suite/demo-test-all"
+uilicious-cli import "$UILICIOUS_PROJ" "./test" -u "$UILICIOUS_EMAIL" -p "$UILICIOUS_PASS" --overwrite
