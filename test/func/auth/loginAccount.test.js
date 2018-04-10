@@ -25,5 +25,5 @@ function loginAccount(email, pass) {
 
 	// Validate welcome message
 	// I.see("Welcome"); // This does not display in mobile view
-	I.see("Create NEw Case");
+	I.see("Create New Case");
 }
