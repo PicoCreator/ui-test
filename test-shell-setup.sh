@@ -5,3 +5,11 @@ if [ -f ./uilicious-config.sh ]; then
 	echo "Detected 'uilicious-config.sh' - using its environment variables when applicable"
 	source ./uilicious-config.sh;
 fi
+
+#
+# @TODO - configuration settings checks
+#
+
+#
+# @TODO - arguments and folder validation
+#
