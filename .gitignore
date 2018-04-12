@@ -6,6 +6,7 @@ output/*
 
 # Git ignoring my personal notes folder
 notes/*
+screenshots/*
 
 # Configuration file
 uilicious-config.sh

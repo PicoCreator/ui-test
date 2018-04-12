@@ -6,6 +6,10 @@
 //
 ////////////////////////////////////////////////
 
+// Invalid Signup
+//--------------------------------------
+TEST.run("case/auth/invalid-signup (invalid-email)");
+
 // Authentication 
 //--------------------------------------
 TEST.run("case/auth/invalid-login");
