@@ -19,6 +19,12 @@ DATA.email = DATA.email || "leonel@example.com";
 DATA.pass  = DATA.pass  || "leonel";
 
 //
+// Signup new user
+//
+DATA.signup_email = DATA.signup_email || "unee-t-signup-"+Date.now()+"@mailinator.com";
+DATA.signup_pass  = DATA.signup_pass  || DATA.signup_email;
+
+//
 // Demo account user list
 // That is avaliable at : demo.case.unee-t.com
 //
