@@ -1,5 +1,5 @@
 // Use the reset funcitonality
-TEST.run("test/func/auth/resetSession");
+TEST.run("func/auth/resetSession");
 
 /**
 *
