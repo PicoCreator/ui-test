@@ -14,9 +14,6 @@ TEST.run("data-config");
 // And performs a logout and login for each account
 TEST.run("func/auth/forEachAccount");
 
-// ForEachAccount requires the site to be loaded first
-I.goTo( DATA.site );
-
 // The specific 3 demo users to test
 var BUG_USER = {
 	"sabrina@example.com"  : "sabrina",

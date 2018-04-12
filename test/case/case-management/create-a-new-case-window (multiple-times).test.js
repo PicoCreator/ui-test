@@ -14,9 +14,6 @@ TEST.run("data-config");
 // to make this test repeatable
 TEST.run("func/auth/loginAccount");
 
-// loginAccount requires the site to be loaded first
-I.goTo( DATA.site );
-
 // Iterate the "Create New Case" test 10 times
 for(var i=0; i<10; ++i) {
 	// login account using the configured account

@@ -14,9 +14,6 @@ TEST.run("data-config");
 // And performs a logout and login for each account
 TEST.run("func/auth/forEachAccount");
 
-// ForEachAccount requires the site to be loaded first
-I.goTo( DATA.site );
-
 // For each email password pair in the demo account list,
 // login and execute the inner function
 forEachAccount( DATA.demoAccounts, function(email, pass) {

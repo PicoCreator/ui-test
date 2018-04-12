@@ -1,3 +1,6 @@
+// Use the reset funcitonality
+TEST.run("test/func/auth/resetSession");
+
 /**
 *
 * Login macro function, this forcefully clear the cookie
@@ -8,15 +11,8 @@
 *
 */
 function loginAccount(email, pass) {
-	// Clear all localstorage and cookies
-	//
-	// cookies alone is not enough as the site uses
-	// localstorage to store auth details
-	TEST.webdriver().execute("localStorage.clear();");
-	UI.COOKIE.deleteAll();
-  
-	// Go to the login page
-	I.goTo( DATA.site );
+	// Reset any current login session if found
+	resetSession();
 
 	// Then do more stuff, like login
 	I.fill("Email",    email || DATA.email );
