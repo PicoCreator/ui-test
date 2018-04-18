@@ -16,7 +16,7 @@ function loginAccount(email, pass) {
 
 	// Then do more stuff, like login
 	I.fill("Email",    email || DATA.email );
-	I.fill("Password", pass  || DATA.pass  );
+	I.fill("Password", pass  || DATA.demoAccounts[email] || DATA.pass  );
 	I.click("Login");
 
 	// Validate welcome message
