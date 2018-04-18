@@ -1,6 +1,6 @@
 # What's in this repo:
 
-Uilicious.com based test scripts, inside the `test` folder.
+UI test scripts, inside the `test` folder, for unee-t.com
 
 This project is kept as a git copy of the online project editor, and provides serveral simple command to facilitate the process.
 
