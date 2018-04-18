@@ -12,11 +12,6 @@
 ////////////////////////////////////////////////
 
 //
-// Load the external chance library
-//
-TEST.run("util/chance");
-
-//
 // Data variable used
 //
 DATA.site  = DATA.site  || "https://dev.case.unee-t.com";
