@@ -1,6 +1,6 @@
 // Case Managment 
 //--------------------------------------
-TEST.run("case/case-management/create-a-new-case-window (buggy-users).test.js");
+TEST.run("case/case-management/new-case-window (buggy-users).test.js");
 
 // Invalid Signup
 //--------------------------------------
