@@ -12,9 +12,14 @@
 ////////////////////////////////////////////////
 
 //
+// Load the external chance library
+//
+TEST.run("util/chance");
+
+//
 // Data variable used
 //
-DATA.site  = DATA.site  || "https://demo.case.unee-t.com";
+DATA.site  = DATA.site  || "https://dev.case.unee-t.com";
 DATA.email = DATA.email || "leonel@example.com";
 DATA.pass  = DATA.pass  || "leonel";
 
