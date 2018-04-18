@@ -13,8 +13,8 @@ TEST.run("func/chance/randomAnimal");
 
 // Prepare the required data variables
 DATA.newCase_petAnimal   = DATA.newCase_petAnimal || randomAnimal();
-DATA.newCase_petTitle    = "Are pet "+DATA.newCase_petAnimal+" allowed?";
-DATA.newCase_petDetails  = "A friend of my is flying overseas, and would want me to take care of his pet "+DATA.newCase_petAnimal+" for 2 months";
+DATA.newCase_petTitle    = "Are pet "+DATA.newCase_petAnimal+"'s allowed?";
+DATA.newCase_petDetails  = "A friend of mine is flying overseas, and would want me to take care of his pet "+DATA.newCase_petAnimal+" for 2 months";
 
 // Login as jocelyn
 loginAccount("jocelyn@example.com");
@@ -60,8 +60,4 @@ I.click("Add Case");
 
 // See confirmation
 I.see("CONFIRMED");
-I.see(DATA.newCase_petTitle);
-
-// Fill in more information
-I.fill("Type your response", "Dun worry, I will keep it clean and safe");
-I.pressEnter();
+I.see( DATA.newCase_petDetails );
