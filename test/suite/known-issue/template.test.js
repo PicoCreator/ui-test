@@ -1,6 +1,6 @@
 // Case Managment 
 //--------------------------------------
-TEST.run("case/case-management/new-case-window (buggy-users).test.js");
+TEST.run("case/case-management/new-case-window-bug/new-case-window (buggy-users).test.js");
 
 // Reset session before duplicate email test
 //--------------------------------------
