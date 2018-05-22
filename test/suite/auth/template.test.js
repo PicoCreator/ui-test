@@ -2,7 +2,7 @@
 //
 //  This is a common template for the
 //  test all suite, which will be used
-//  by demo / dev / production???
+//  by demo / dev / production
 //
 ////////////////////////////////////////////////
 

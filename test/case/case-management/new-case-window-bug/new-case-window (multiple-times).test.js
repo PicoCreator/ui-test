@@ -26,6 +26,14 @@ for(var i=0; i<10; ++i) {
 	I.see("New Case");
 	I.see("Assign this case to");
 	I.see("Add Case");
+
+	// Lets reload the page
+	I.refreshPage();
+
+	// Lets see the "New Case" UI
+	I.see("New Case");
+	I.see("Assign this case to");
+	I.see("Add Case");
 	
 	// And try again after loggin in and out
 };

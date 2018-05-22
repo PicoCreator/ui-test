@@ -20,9 +20,6 @@ forEachAccount( DATA.demoAccounts, function(email, pass) {
 
 	// For each account, lets repeat this 10 times
 	for(var i=0; i<3; ++i) {
-		// Lets reload the page
-		I.goTo( DATA.site );
-
 		// Click on "Create New Case"
 		I.click("Create New Case");
 		
@@ -31,7 +28,10 @@ forEachAccount( DATA.demoAccounts, function(email, pass) {
 		I.see("Assign this case to");
 		I.see("Add Case");
 		
+		// Lets reload the page
 		// And try again
+		I.goTo( DATA.site );
+		I.see("Create New Case");
 	}
 
 });

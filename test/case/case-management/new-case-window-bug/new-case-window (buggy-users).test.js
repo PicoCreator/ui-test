@@ -28,10 +28,8 @@ forEachAccount( BUG_USER, function(email, pass) {
 	// For each account, lets repeat this 10 times
 	for(var i=0; i<3; ++i) {
 
-		// Lets reload the page
-		I.goTo( DATA.site );
-
-		// Click on "Create New Case"
+		// See and click on crate a case
+		I.see("Create New Case");
 		I.click("Create New Case");
 		
 		// Lets see the "New Case" UI
@@ -39,7 +37,8 @@ forEachAccount( BUG_USER, function(email, pass) {
 		I.see("Assign this case to");
 		I.see("Add Case");
 		
-		// And try again
+		// And try again, after reloading the page
+		I.goTo( DATA.site );
 	}
 
 });
