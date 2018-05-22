@@ -18,7 +18,12 @@ TEST.run("func/auth/forEachAccount");
 var BUG_USER = {
 	"sabrina@example.com"  : "sabrina",
 	"marina@example.com"   : "marina",
-	"lawrence@example.com" : "lawrence"
+	"lawrence@example.com" : "lawrence",
+
+	"celeste@example.com"  : "celeste",
+	"regina@example.com"   : "regina",
+	"marvin@example.com"   : "marvin",
+	"anabelle@example.com" : "anabelle"
 };
 
 // For each email password pair in the demo account list,
