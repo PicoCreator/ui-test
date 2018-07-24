@@ -2,8 +2,8 @@
 //
 //  test case : load unee-t.com
 //
-//  this is used mainly to double 
-//  check if everything is working
+//  this is used mainly to do quick 
+//  checks if basics is working
 //
 ////////////////////////////////////////////////
 
