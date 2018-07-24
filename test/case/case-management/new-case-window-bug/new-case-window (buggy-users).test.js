@@ -14,7 +14,7 @@ TEST.run("data-config");
 // And performs a logout and login for each account
 TEST.run("func/auth/forEachAccount");
 
-// The specific 3 demo users to test
+// The specific 3+4 demo users to test
 var BUG_USER = {
 	"sabrina@example.com"  : "sabrina",
 	"marina@example.com"   : "marina",

@@ -7,7 +7,7 @@
 
 // Configure the data variable
 //--------------------------------
-DATA.dev  = "https://dev.case.unee-t.com";
+DATA.site  = "https://dev.case.unee-t.com";
 
 // Loads the default config
 //--------------------------------
