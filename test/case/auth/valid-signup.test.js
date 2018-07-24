@@ -30,4 +30,4 @@ I.select("By signing up");
 I.click("SUBMIT");
 
 // See dashboard
-I.see("Create New Case");
+I.see("Select a case");

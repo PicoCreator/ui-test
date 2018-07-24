@@ -20,4 +20,4 @@ I.fill("Password", DATA.pass  );
 I.click("Login");
 
 // Welcome message
-I.see("Create New Case");
+I.see("Select a case");
