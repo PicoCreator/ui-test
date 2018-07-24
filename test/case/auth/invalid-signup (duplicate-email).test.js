@@ -25,6 +25,9 @@ I.fill("Country", "Singapore" );
 I.fill("Email", "leonel@example.com" );
 I.fill("Password", "leonel@example.com" );
 
+// Agree to T&C
+I.select("By signing up");
+
 // Submit the form
 I.click("SUBMIT");
 

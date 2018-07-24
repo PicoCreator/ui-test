@@ -15,7 +15,7 @@
 // Data variable used
 //
 DATA.site  = DATA.site  || "https://dev.case.unee-t.com";
-DATA.email = DATA.email || "leonel@example.com";
+DATA.email = DATA.email || "leonel@mailinator.com";
 DATA.pass  = DATA.pass  || "leonel";
 
 //
@@ -29,15 +29,15 @@ DATA.signup_pass  = DATA.signup_pass  || DATA.signup_email;
 // That is avaliable at : demo.case.unee-t.com
 //
 DATA.demoAccounts = DATA.demoAccounts || {
-	"leonel@example.com"   : "leonel",
-	"marley@example.com"   : "marley",
-	"michael@example.com"  : "michael",
-	"sabrina@example.com"  : "sabrina",
-	"celeste@example.com"  : "celeste",
-	"jocelyn@example.com"  : "jocelyn",
-	"marina@example.com"   : "marina",
-	"regina@example.com"   : "regina",
-	"marvin@example.com"   : "marvin",
-	"lawrence@example.com" : "lawrence",
-	"anabelle@example.com" : "anabelle"
+	"leonel@mailinator.com"   : "leonel",
+	"marley@mailinator.com"   : "marley",
+	"michael@mailinator.com"  : "michael",
+	"sabrina@mailinator.com"  : "sabrina",
+	"celeste@mailinator.com"  : "celeste",
+	"jocelyn@mailinator.com"  : "jocelyn",
+	"marina@mailinator.com"   : "marina",
+	"regina@mailinator.com"   : "regina",
+	"marvin@mailinator.com"   : "marvin",
+	"lawrence@mailinator.com" : "lawrence",
+	"anabelle@mailinator.com" : "anabelle"
 };

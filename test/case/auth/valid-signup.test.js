@@ -23,6 +23,9 @@ I.fill("Country", "Singapore" );
 I.fill("Email", DATA.signup_email );
 I.fill("Password", DATA.signup_pass );
 
+// Agree to T&C
+I.select("By signing up");
+
 // Submit the form
 I.click("SUBMIT");
 
