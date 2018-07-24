@@ -14,3 +14,7 @@ TEST.run("case/auth/invalid-signup (invalid-email)");
 //--------------------------------------
 TEST.run("case/auth/invalid-login");
 TEST.run("case/auth/valid-login");
+
+// Case Creation
+//--------------------------------------
+TEST.run("suite/test-all/new-case-template");
