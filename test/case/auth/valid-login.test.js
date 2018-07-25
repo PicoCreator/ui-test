@@ -4,22 +4,9 @@
 //
 ////////////////////////////////////////////////
 
-// Include the data-config
+// Include the data-config, and login util function
 TEST.run("data-config");
+TEST.run("func/auth/authUtils");
 
-//
-// The actual test case
-//
-
-// Start by going to a web page first, like this:
-I.goTo( DATA.site );
-
-// Then do more stuff, like login:
-I.fill("Email",    DATA.email );
-I.fill("Password", DATA.pass  );
-I.click("Login");
-
-// Welcome message
-I.amAt("/case/");
-I.see("Open");
-I.see("Closed");
+// Perform the login
+loginAccount( DATA.email, DATA.pass );

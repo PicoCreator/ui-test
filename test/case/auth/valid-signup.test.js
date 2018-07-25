@@ -7,28 +7,9 @@
 //
 ////////////////////////////////////////////////
 
-// Include the data-config
+// Include the data-config, and login util function
 TEST.run("data-config");
+TEST.run("func/auth/authUtils");
 
-// Go to the signup page
-I.goTo( DATA.site );
-
-// Click on signup
-I.click( "Sign Up" );
-
-// Fill up the form
-I.fill("Name", DATA.signup_email );
-I.fill("Phone", "98765432" );
-I.fill("Country", "Singapore" );
-I.fill("Email", DATA.signup_email );
-I.fill("Password", DATA.signup_pass );
-
-// Agree to T&C
-I.select("By signing up");
-
-// Submit the form
-I.click("SUBMIT");
-
-// See dashboard
-I.see("My Units");
-I.see("ALL UNITS");
+// Perform the login
+signupTestAccount( "singup-test" );

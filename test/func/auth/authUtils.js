@@ -48,12 +48,14 @@ function loginAccount(email, pass) {
 
 	// Then do more stuff, like login
 	I.fill("Email",    email || DATA.email );
-	I.fill("Password", pass  || DATA.demoAccounts[email] || DATA.pass  );
+	I.fill("Password", pass  || DATA.pass  );
 	I.click("Login");
 
 	// Validate welcome message
 	// I.see("Welcome"); // This does not display in mobile view
-	I.see("Create New Case");
+	I.dontSee("Login");
+	I.see("Open");
+	I.see("Closed");
 }
 
 /**
@@ -90,9 +92,9 @@ function signupTestAccount(type) {
 	I.click( "Sign Up" );
 
 	// Fill up the form
-	I.fill("Name", testEmail );
-	I.fill("Phone", "98765432" );
-	I.fill("Country", "Singapore" );
+	// I.fill("Name", testEmail );
+	// I.fill("Phone", "98765432" );
+	// I.fill("Country", "Singapore" );
 	I.fill("Email", testEmail );
 	I.fill("Password", testEmail );
 
@@ -103,6 +105,7 @@ function signupTestAccount(type) {
 	I.click("SUBMIT");
 
 	// See dashboard
+	I.dontSee("SUBMIT");
 	I.see("My Units");
 	I.see("ALL UNITS");
 }
