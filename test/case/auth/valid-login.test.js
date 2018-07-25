@@ -20,4 +20,6 @@ I.fill("Password", DATA.pass  );
 I.click("Login");
 
 // Welcome message
-I.see("Select a case");
+I.amAt("/case/");
+I.see("Open");
+I.see("Closed");

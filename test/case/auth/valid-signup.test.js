@@ -30,4 +30,5 @@ I.select("By signing up");
 I.click("SUBMIT");
 
 // See dashboard
-I.see("Select a case");
+I.see("My Units");
+I.see("ALL UNITS");

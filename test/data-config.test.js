@@ -25,6 +25,14 @@ DATA.signup_email = DATA.signup_email || "unee-t-signup-"+Date.now()+"@mailinato
 DATA.signup_pass  = DATA.signup_pass  || DATA.signup_email;
 
 //
+// Unique test run ID : used to generate various email accounts
+// @TODO : Get from uilicious the actual test ID, instead of the run date
+//
+DATA.test_runID = DATA.test_runID || Date.now();
+
+//
+// @DEPRECATED
+//
 // Demo account user list
 // That is avaliable at : demo.case.unee-t.com
 //

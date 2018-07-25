@@ -19,11 +19,11 @@ I.goTo( DATA.site );
 I.click( "Sign Up" );
 
 // Fill up the form
-I.fill("Name", "leonel@example.com" );
+I.fill("Name", DATA.email );
 I.fill("Phone", "98765432" );
 I.fill("Country", "Singapore" );
-I.fill("Email", "leonel@example.com" );
-I.fill("Password", "leonel@example.com" );
+I.fill("Email", DATA.email );
+I.fill("Password", DATA.email );
 
 // Agree to T&C
 I.select("By signing up");
