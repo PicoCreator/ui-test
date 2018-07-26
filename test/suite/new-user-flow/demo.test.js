@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////
 //
 //  Performs all applicable test cases,
-//  against 'dev.case.unee-t.com' 
+//  against 'demo.case.unee-t.com' 
 //
 ////////////////////////////////////////////////
 
@@ -11,4 +11,4 @@ TEST.run("suite/config/demo");
 
 // Run the auth list
 //--------------------------------
-TEST.run("suite/slow-test/template");
+TEST.run("suite/new-user-flow/template");

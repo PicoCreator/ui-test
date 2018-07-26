@@ -14,3 +14,4 @@ TEST.run("case/auth/invalid-signup (invalid-email)");
 //--------------------------------------
 TEST.run("case/auth/invalid-login");
 TEST.run("case/auth/valid-login");
+TEST.run("case/auth/valid-signup");

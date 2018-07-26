@@ -11,4 +11,4 @@ TEST.run("suite/config/dev");
 
 // Run the auth list
 //--------------------------------
-TEST.run("suite/slow-test/template");
+TEST.run("suite/new-user-flow/template");

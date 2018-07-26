@@ -6,15 +6,6 @@
 //
 ////////////////////////////////////////////////
 
-// Invalid Signup
-//--------------------------------------
-TEST.run("case/auth/invalid-signup (invalid-email)");
-
-// Authentication 
-//--------------------------------------
-TEST.run("case/auth/invalid-login");
-TEST.run("case/auth/valid-login");
-
-// Case Creation
-//--------------------------------------
-TEST.run("suite/test-all/new-case-template");
+TEST.run("suite/misc/template");
+TEST.run("suite/auth/template");
+TEST.run("suite/new-user-flow/template");

@@ -7,5 +7,5 @@
 //
 // Test http redirection, and sanity
 //
-TEST.run("case/sanity/hello-unee-t");
+TEST.run("case/misc/hello-unee-t");
 TEST.run("case/misc/http-redirect");
