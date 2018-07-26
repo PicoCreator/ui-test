@@ -14,7 +14,7 @@
 //
 // Site configuration
 //
-DATA.site  = DATA.site  || "https://dev.case.unee-t.com";
+DATA.site  = DATA.site  || "https://case.dev.unee-t.com";
 
 //
 // Known valid email with login (auth based checks)
