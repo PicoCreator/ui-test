@@ -121,3 +121,11 @@ function loginUniqueTestAccount(type) {
 	let testEmail = getUniqueTestEmail(type);
 	loginAccount(testEmail, testEmail);
 }
+
+/**
+ * Goto mailnator account
+ */
+function gotoMailinator(email) {
+	let emailPrefix = email.split("@")[0];
+	I.goTo("https://www.mailinator.com/v2/inbox.jsp?zone=public&query="+emailPrefix+"#/#inboxpane");
+}

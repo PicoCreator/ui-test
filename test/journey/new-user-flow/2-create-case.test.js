@@ -12,7 +12,7 @@ TEST.requireOnce("journey/new-user-flow/1-owner-signup-and-create-unit");
 I.click("add");
 
 // Fill in some other details
-I.fill( "Case title", "New tenant onboarding" );
+I.fill( "Case title", "New tenant onboarding to Unee-t" );
 I.fill( "Details",    "Welcome aboard!" );
 
 // Fill in category details
