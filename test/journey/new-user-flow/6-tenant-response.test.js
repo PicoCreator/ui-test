@@ -11,6 +11,7 @@ TEST.requireOnce("journey/new-user-flow/5-tenant-invite-signup");
 //
 // Now lets try to do some responses
 //
+
 // Fill in the chat box
 I.click('//*[@id="chatbox"]');
 I.type("This looks awesome");
