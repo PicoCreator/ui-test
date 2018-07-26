@@ -1,12 +1,12 @@
 ////////////////////////////////////////////////
 //
-//  test case : invite tenant
+//  test case : valid login
 //
 ////////////////////////////////////////////////
 
-// Include the data-config, and created case
+// Include the data-config, and login util function
 TEST.run("data-config");
-TEST.requireOnce("journey/new-user-flow/3-invite-tenant");
+TEST.run("case/auth/valid-login");
 
 // Click the home navigator, and perform a logout
 I.click('//*[@id="app"]/div/div/div[1]/div[1]/div[1]/div/button');
