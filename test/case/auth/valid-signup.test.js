@@ -12,4 +12,4 @@ TEST.run("data-config");
 TEST.run("func/auth/authUtils");
 
 // Perform the login
-signupTestAccount( "singup-test" );
+signupUniqueTestAccount( "singup-test" );

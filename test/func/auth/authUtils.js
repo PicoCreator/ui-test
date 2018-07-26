@@ -67,7 +67,7 @@ function loginAccount(email, pass) {
  * 
  * @return  String representation of the email to use
  */
-function getTestEmail(type) {
+function getUniqueTestEmail(type) {
 	if(type == null || type.length == 0) {
 		type = "unknown";
 	}
@@ -81,9 +81,9 @@ function getTestEmail(type) {
  * @param   type   type of account to signup for
  *
  */
-function signupTestAccount(type) {
+function signupUniqueTestAccount(type) {
 	// Get the test email
-	let testEmail = getTestEmail(type);
+	let testEmail = getUniqueTestEmail(type);
 
 	// Reset any current login session if found
 	resetSession();
@@ -116,8 +116,8 @@ function signupTestAccount(type) {
  *
  * @param   type   type of account to signup for
  */
-function loginTestAccount(type) {
+function loginUniqueTestAccount(type) {
 	// Get the test email, and apply the login
-	let testEmail = getTestEmail(type);
+	let testEmail = getUniqueTestEmail(type);
 	loginAccount(testEmail, testEmail);
 }

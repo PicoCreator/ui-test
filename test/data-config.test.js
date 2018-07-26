@@ -14,7 +14,7 @@
 //
 // Site configuration
 //
-DATA.site  = DATA.site  || "https://dev.case.unee-t.com";
+DATA.site  = DATA.site  || "https://unee-t-pr-404.herokuapp.com/"; // "https://dev.case.unee-t.com";
 
 //
 // Known valid email with login (auth based checks)
@@ -27,3 +27,8 @@ DATA.pass  = DATA.pass  || "leonel";
 // @TODO : Get from uilicious the actual test ID, instead of the run date
 //
 DATA.test_runID = DATA.test_runID || Date.now();
+
+//
+// Polyfill some experimental future features
+//
+TEST.run("func/polyfill");
