@@ -71,7 +71,7 @@ function getUniqueTestEmail(type) {
 	if(type == null || type.length == 0) {
 		type = "unknown";
 	}
-	return "AUTO-"+type+"-"+DATA.test_runID+"@mailinator.com";
+	return "UI-test-"+type+"-"+DATA.test_runID+"@mailinator.com";
 }
 
 /**

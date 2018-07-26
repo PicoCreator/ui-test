@@ -14,7 +14,7 @@
 //
 // Site configuration
 //
-DATA.site  = DATA.site  || "https://unee-t-pr-404.herokuapp.com/"; // "https://dev.case.unee-t.com";
+DATA.site  = DATA.site  || "https://dev.case.unee-t.com";
 
 //
 // Known valid email with login (auth based checks)

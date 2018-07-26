@@ -19,7 +19,7 @@ I.click("add");
 //
 
 // Lets fill up some unit information
-I.fill("Unit Name", "[AUTO-UI-TEST] unit - "+DATA.test_runID);
+I.fill("Unit Name", "[UI-TEST] unit - "+DATA.test_runID);
 // Unit type selection
 I.click("Unit Type");
 I.click("House");
@@ -29,7 +29,7 @@ I.click("Owner");
 // Select occupant
 I.select("I am also the occupant");
 // Notes / Additional descrip
-I.fill("Additional Description", "[Automated Test]");
+I.fill("Additional Description", "[Uilicious Automated Test]");
 
 // Filling in the address
 I.fill("Address", "This Should Be Considered A Real Address");
