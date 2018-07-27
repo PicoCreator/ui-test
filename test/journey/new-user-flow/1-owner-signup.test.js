@@ -10,6 +10,3 @@ TEST.requireOnce("func/auth/authUtils");
 
 // Lets get the owner signed up
 signupUniqueTestAccount("owner");
-
-// Click add
-I.click("add");
