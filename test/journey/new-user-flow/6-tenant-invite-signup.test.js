@@ -6,7 +6,7 @@
 
 // Include the data-config, and created case
 TEST.run("data-config");
-TEST.requireOnce("journey/new-user-flow/4-owner-logout");
+TEST.requireOnce("journey/new-user-flow/5-owner-logout");
 
 //
 // Lets hop over to mailinator

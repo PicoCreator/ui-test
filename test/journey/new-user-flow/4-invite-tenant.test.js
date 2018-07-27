@@ -6,7 +6,7 @@
 
 // Include the data-config, and created case
 TEST.run("data-config");
-TEST.requireOnce("journey/new-user-flow/2-create-case");
+TEST.requireOnce("journey/new-user-flow/3-create-case");
 
 //
 // Lets do some welcome messages

@@ -6,12 +6,11 @@
 
 // Include the data-config, and login util function
 TEST.run("data-config");
-TEST.requireOnce("func/auth/authUtils");
+TEST.requireOnce("journey/new-user-flow/1-owner-signup");
 
-// Lets get the owner signed up
-signupUniqueTestAccount("owner");
-
+//
 // Click add
+//
 I.click("add");
 
 //

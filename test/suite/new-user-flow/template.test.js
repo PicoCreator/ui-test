@@ -4,4 +4,4 @@
 //
 ////////////////////////////////////////////////
 
-TEST.run("journey/new-user-flow/6-tenant-response");
+TEST.run("journey/new-user-flow/7-tenant-response");

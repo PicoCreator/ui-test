@@ -6,7 +6,7 @@
 
 // Include the data-config, and login util function
 TEST.run("data-config");
-TEST.requireOnce("journey/new-user-flow/1-owner-signup-and-create-unit");
+TEST.requireOnce("journey/new-user-flow/2-create-unit");
 
 // Add a case
 I.click("add");

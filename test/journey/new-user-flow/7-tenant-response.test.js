@@ -6,7 +6,7 @@
 
 // Include the data-config, and created case
 TEST.run("data-config");
-TEST.requireOnce("journey/new-user-flow/5-tenant-invite-signup");
+TEST.requireOnce("journey/new-user-flow/6-tenant-invite-signup");
 
 //
 // Now lets try to do some responses
