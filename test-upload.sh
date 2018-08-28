@@ -7,5 +7,12 @@ cd $DIR;
 # Does the shell script environment setup
 source ./test-shell-setup.sh
 
-# Export the project to the current directory
-uilicious-cli import "$UILICIOUS_PROJ" "./test" -u "$UILICIOUS_EMAIL" -p "$UILICIOUS_PASS" --overwrite
+# Upload using uilicious internal admin build
+if [ ! -z "$UILICIOUS_CLIPATH" ]; then
+	# Upload using the admin cli build
+	echo "uploading using admin settings"
+	node "$UILICIOUS_CLIPATH" import "$UILICIOUS_PROJ" "./test" -u "$UILICIOUS_EMAIL" -p "$UILICIOUS_PASS" --overwrite --loginAs "$UILICIOUS_LOGINAS"
+else
+	# Upload the project to the current directory
+	uilicious-cli import "$UILICIOUS_PROJ" "./test" -u "$UILICIOUS_EMAIL" -p "$UILICIOUS_PASS" --overwrite
+fi
