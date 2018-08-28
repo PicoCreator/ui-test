@@ -11,7 +11,7 @@ TEST.requireOnce("journey/new-user-flow/5-owner-logout");
 //
 // Lets hop over to mailinator
 //
-gotoMailinator( getUniqueTestEmail("tenant") );
+gotoMailBox( getUniqueTestEmail("tenant") );
 
 // Wait for email, and click it
 I.see("New Case: New tenant onboarding");
