@@ -99,7 +99,7 @@ function signupUniqueTestAccount(type) {
 	I.fill("Password", testEmail );
 
 	// Agree to T&C
-	I.click("By signing up");
+	I.select("By signing up");
 	I.selected("By signing up");
 
 	// Submit the form
@@ -108,7 +108,7 @@ function signupUniqueTestAccount(type) {
 	// See dashboard
 	I.dontSee("SUBMIT");
 	I.see("My Units");
-	I.see("ALL UNITS");
+	//I.see("ALL UNITS");
 }
 
 /**
