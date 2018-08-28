@@ -1,3 +1,3 @@
 // Invalid Signup
 //--------------------------------------
-TEST.run("case/auth/invalid-signup (duplicate-email)");
+TEST.run("case/auth/invalid-signup (invalid-email)");
