@@ -25,6 +25,7 @@ I.see("Sub-category");
 I.click('//div[contains(@id,"Sub-category")]');
 I.click("Viewing");
 
+/*
 // Seelect Priority
 I.see("Priority");
 I.click('//div[contains(@id,"Priority")]');
@@ -34,6 +35,7 @@ I.click("P3");
 I.see("Severity");
 I.click('//div[contains(@id,"Severity")]');
 I.click("minor");
+*/
 
 // Select Assignment
 I.select("Owner/Landlord");
@@ -42,6 +44,5 @@ I.select("Owner/Landlord");
 I.click("Add Case");
 
 // Wait for create case to complete
-I.dontSee("New Case");
 I.see("Open");
 I.see("Closed");

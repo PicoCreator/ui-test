@@ -128,5 +128,6 @@ function loginUniqueTestAccount(type) {
  */
 function gotoMailinator(email) {
 	let emailPrefix = email.split("@")[0];
-	I.goTo("https://www.mailinator.com/v2/inbox.jsp?zone=public&query="+emailPrefix+"#/#inboxpane");
+	I.goTo("https://www.mailinator.com/v2/inbox.jsp?zone=public&query="+(""+emailPrefix).toLowerCase()+"#/#inboxpane");
+	I.wait(5);
 }

@@ -1,0 +1,1 @@
+Minimum user journey flow, from signup, invitation and communicating on issues

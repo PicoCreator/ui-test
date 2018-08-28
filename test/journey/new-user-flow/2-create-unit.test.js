@@ -36,9 +36,9 @@ I.fill("City", "CBD");
 
 // Country selection
 I.click("ZIP / Postal Code");
-I.click("Country");
-I.type("Singapore");
-I.click("Singapore");
+I.fill("Country", "Singapore");
+//I.type("Singapore");
+//I.click("Singapore");
 
 // Adminstrative region
 I.fill("Administrative Region", "Singapore");
