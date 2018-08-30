@@ -10,13 +10,14 @@
 // + subCategory
 // + assign
 // + assignEmail (only filled if provided)
+// + isOccupant
 //
 // @param  opt  [optional] object containing option parameters
 //
 function setupNewCase(opt) {
 
 	// Fill in some other details
-	I.fill( "Case title", opt.title || "New tenant onboarding to Unee-t" );
+	I.fill( "Case title", opt.title || "New onboarding to Unee-t" );
 	I.fill( "Details", opt.details || "Welcome aboard!" );
 
 	// Fill in category details
@@ -44,7 +45,21 @@ function setupNewCase(opt) {
 	// Select Assignment
 	I.select(opt.assign || "Owner/Landlord");
 
+	// Email assignment
 	if( opt.assignEmail ) {
 		I.fill("email", opt.assignEmail);
 	}
+
+	// Occupant assignment flag
+	if( opt.isOccupant ) {
+		I.select("is also the occupant of this unit");
+	}
+
+	// Submit the case 
+	I.click("Add Case");
+
+	// Wait for create case to complete
+	//I.dontSee("New Case");
+	I.see("Open");
+	I.see("Closed");
 }

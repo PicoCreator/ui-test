@@ -10,7 +10,7 @@ TEST.requireOnce("func/auth/authUtils");
 TEST.requireOnce("func/unit/setupNewUnit");
 
 // Lets get the agent signed up
-signupUniqueTestAccount("um-agent");
+signupUniqueTestAccount("um-agent"+(DATA.umSuffix || ""));
 
 // Click the add unit button
 I.click("add");
