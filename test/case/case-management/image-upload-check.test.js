@@ -27,4 +27,5 @@ I.wait(2);
 I.wait(2);
 
 // Make sure the image is loaded properly
-I.dontSee("0");
+// This is not reliable, as user ID can randomly include a 0
+//I.dontSee("0");
