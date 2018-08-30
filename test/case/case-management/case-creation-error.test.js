@@ -22,5 +22,5 @@ I.click("Owner");
 // Create the case
 I.click("Add Case");
 
-
-I.see("API Error: You must enter a summary for this case.");
+// Error message - as we have provided no details
+I.see("Error");

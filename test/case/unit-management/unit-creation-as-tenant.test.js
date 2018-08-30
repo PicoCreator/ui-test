@@ -1,10 +1,15 @@
-////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
 //
-//  test case : owner signup, and creating of unit as a Tenant
+//  test case : tentant signup, and creating of unit as a tenant
 //
-////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
 
-TEST.requireOnce("journey/new-user-flow/1-owner-signup");
+// Include the data-config, and login util function
+TEST.run("data-config");
+TEST.requireOnce("func/auth/authUtils");
+
+// Lets get the agent signed up
+signupUniqueTestAccount("um-tenant");
 
 //
 // Click add

@@ -71,7 +71,8 @@ function getUniqueTestEmail(type) {
 	if(type == null || type.length == 0) {
 		type = "unknown";
 	}
-	return "UI-test-"+type+"-"+DATA.test_runID+"@mailinator.com";
+	// return "uit-"+type+"-"+DATA.test_runID+"@maildrop.cc";
+	return "uit-"+type+"-"+DATA.test_runID+"@mailinator.com";
 }
 
 /**
@@ -130,4 +131,14 @@ function gotoMailBox(email) {
 	let emailPrefix = email.split("@")[0];
 	I.goTo("https://www.mailinator.com/v2/inbox.jsp?zone=public&query="+(""+emailPrefix).toLowerCase()+"#/#inboxpane");
 	I.wait(5);
+
+	// I.goTo("https://maildrop.cc/inbox/"+(""+emailPrefix).toLowerCase()+"");
+	// I.wait(5);
+	// I.click("Reload");
+	// I.wait(5);
+	// I.click("Reload");
+	// I.wait(5);
+	// I.click("Reload");
+	// I.wait(5);
+	// I.click("Reload");
 }
