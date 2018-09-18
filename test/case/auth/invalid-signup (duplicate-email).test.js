@@ -26,7 +26,7 @@ I.fill("Email", DATA.email );
 I.fill("Password", DATA.email );
 
 // Agree to T&C
-I.select("By signing up");
+I.click("By signing up");
 
 // Submit the form
 I.click("SUBMIT");

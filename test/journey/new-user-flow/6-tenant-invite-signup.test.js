@@ -14,8 +14,8 @@ TEST.requireOnce("journey/new-user-flow/5-owner-logout");
 gotoMailBox( getUniqueTestEmail("tenant") );
 
 // Wait for email, and click it
-I.see("New Case: New tenant onboarding");
-I.click("New Case: New tenant onboarding");
+I.see("New Case");
+I.click("New Case");
 
 // Click on the link
 I.see("If the above link does not work, copy paste this in your browser:");

@@ -23,7 +23,7 @@ I.fill("Password", "not-a-valid-email-format" );
 I.see("Email address is invalid");
 
 // Agree to T&C
-I.select("By signing up");
+I.click("By signing up");
 
 // Click on submit (expect nothing to happen)
 I.click("SUBMIT");
