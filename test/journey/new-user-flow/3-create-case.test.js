@@ -38,7 +38,7 @@ I.click("minor");
 */
 
 // Select Assignment
-I.select("Owner/Landlord");
+I.click("Owner/Landlord");
 
 // Submit the case 
 I.click("Add Case");

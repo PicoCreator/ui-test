@@ -35,7 +35,7 @@ I.fill("Type the email address", getUniqueTestEmail("tenant"));
 I.click("Relationship to this unit");
 I.click("tenant");
 
-I.select("The Tenant is also the occupant");
+I.click("The Tenant is also the occupant");
 I.click("Send invitation");
 
 I.see("We just sent an invite");

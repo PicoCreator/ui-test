@@ -26,7 +26,7 @@ I.click("House");
 I.click("Relationship to unit");
 I.click("Owner");
 // Select occupant
-I.select("I am also the occupant");
+I.click("I am also the occupant");
 // Notes / Additional descrip
 I.fill("Additional Description", "[Uilicious Automated Test]");
 
