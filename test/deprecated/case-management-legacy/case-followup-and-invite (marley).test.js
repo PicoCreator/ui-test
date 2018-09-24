@@ -18,7 +18,7 @@ DATA.newCase_petAnimal   = DATA.newCase_petAnimal  || "Mandrill";
 DATA.newCase_petTitle    = DATA.newCase_petTitle   || "Are pet "+DATA.newCase_petAnimal+"'s allowed?";
 DATA.newCase_petDetails  = DATA.newCase_petDetails || "A friend of mine is flying overseas, and would want me to take care of his pet "+DATA.newCase_petAnimal+" for 2 months";
 // Create a new contractor to add to case
-DATA.newCase_petInspector = DATA.newCase_petInspector || "unee-t-inspector-"+Date.now()+"@mailinator.com";
+DATA.newCase_petInspector = DATA.newCase_petInspector || "unee-t-inspector-"+Date.now()+"@inboxkitten.com";
 
 // Login as marley (landlord)
 loginAccount("marley@example.com");

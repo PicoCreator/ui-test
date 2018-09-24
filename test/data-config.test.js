@@ -19,7 +19,7 @@ DATA.site  = DATA.site  || "https://case.dev.unee-t.com";
 //
 // Known valid email with login (auth based checks)
 //
-DATA.email = DATA.email || "leonel@mailinator.com";
+DATA.email = DATA.email || "leonel@inboxkitten.com";
 DATA.pass  = DATA.pass  || "leonel";
 
 //

@@ -17,7 +17,7 @@ DATA.newCase_petTitle    = "Are pet "+DATA.newCase_petAnimal+"'s allowed?";
 DATA.newCase_petDetails  = "A friend of mine is flying overseas, and would want me to take care of his pet "+DATA.newCase_petAnimal+" for 2 months";
 
 // Login as jocelyn
-loginAccount("jocelyn@mailinator.com");
+loginAccount("jocelyn@inboxkitten.com");
 
 // Create New Case for specific (Demo - Unit 01-02)
 I.see("Demo - Unit 01-02");
