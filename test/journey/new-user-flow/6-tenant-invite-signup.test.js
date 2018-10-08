@@ -19,6 +19,7 @@ I.click("New Case");
 
 // Click on the link
 I.see("If the above link does not work, copy paste this in your browser:");
+I.see("Please click on this link to get more information");
 I.click("this link");
 
 //
