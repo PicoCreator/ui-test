@@ -43,7 +43,8 @@ function setupNewCase(opt) {
 	*/
 
 	// Select Assignment
-	I.select(opt.assign || "Owner/Landlord");
+	I.see("Assign this case to")
+	I.click(opt.assign || "Owner/Landlord");
 
 	// Email assignment
 	if( opt.assignEmail ) {
@@ -52,7 +53,7 @@ function setupNewCase(opt) {
 
 	// Occupant assignment flag
 	if( opt.isOccupant ) {
-		I.select("is also the occupant of this unit");
+		I.click("is also the occupant of this unit");
 	}
 
 	// Submit the case 
