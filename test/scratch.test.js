@@ -1,13 +1,14 @@
 // Start by going to a web page first, like this:
-I.goTo("http://demo.case.unee-t.com/");
+I.goTo("http://case.demo.unee-t.com/");
 
 // Then do more stuff, like login:
-I.fill("Email", "leonel@example.com");
-I.fill("Password", "leonel");
+I.fill("Email", "uilicious-test@inboxkitten.com");
+I.fill("Password", "uilicious-test@inboxkitten.com");
 I.click("Login");
 
 // Welcome message
 I.see("Welcome");
+I.see("Welcome");
+I.see("Welcome");
 
-// Visit our documentation here: https://docs.uilicious.com
-// Need help? Contact support@uilicious.com
+

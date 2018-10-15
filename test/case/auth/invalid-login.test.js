@@ -15,7 +15,7 @@ TEST.run("data-config");
 I.goTo( DATA.site );
 
 // Then do more stuff, like login:
-I.fill("Email",    "test-user-"+Date.now()+"@mailinator.com" );
+I.fill("Email",    "test-user-"+Date.now()+"@inboxkitten.com" );
 I.fill("Password", Date.now()  );
 I.click("Login");
 

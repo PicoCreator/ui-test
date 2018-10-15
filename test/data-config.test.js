@@ -19,8 +19,8 @@ DATA.site  = DATA.site  || "https://case.dev.unee-t.com";
 //
 // Known valid email with login (auth based checks)
 //
-DATA.email = DATA.email || "leonel@mailinator.com";
-DATA.pass  = DATA.pass  || "leonel";
+DATA.email = DATA.email || "uneet-fixed-test@inboxkitten.com";
+DATA.pass  = DATA.pass  || "uneet-fixed-test@inboxkitten.com";
 
 //
 // Unique test run ID : used to generate various email accounts

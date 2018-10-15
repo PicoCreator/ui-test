@@ -12,7 +12,7 @@ TEST.run("data-config");
 TEST.run("func/auth/loginAccount");
 
 // Login as jocelyn
-loginAccount("jocelyn@mailinator.com");
+loginAccount("jocelyn@inboxkitten.com");
 
 // Select the unit
 I.see("Demo - Unit 01-02");
