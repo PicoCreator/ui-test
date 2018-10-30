@@ -45,4 +45,4 @@ I.click("Add Case");
 
 // Wait for create case to complete
 I.see("Open");
-I.see("Closed");
+// I.see("Closed");

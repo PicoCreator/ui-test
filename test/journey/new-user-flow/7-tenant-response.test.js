@@ -33,3 +33,4 @@ I.wait(2);
 I.click('//*[@id="chatbox"]');
 I.type("Its cute >_<");
 I.click("send");
+I.wait(1);

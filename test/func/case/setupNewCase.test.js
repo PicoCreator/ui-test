@@ -62,5 +62,5 @@ function setupNewCase(opt) {
 	// Wait for create case to complete
 	//I.dontSee("New Case");
 	I.see("Open");
-	I.see("Closed");
+	// I.see("Closed");
 }

@@ -9,7 +9,10 @@ TEST.run("data-config");
 TEST.requireOnce("journey/new-user-flow/4-invite-tenant");
 
 // Click the home navigator, and perform a logout
-I.click('//*[@id="app"]/div/div/div[1]/div[1]/div[1]/div/button');
+I.click("#app", 145, 25);
 I.wait(1);
-I.click("Logout");
+I.see("Logout");
+I.click(".items-center");
+
+// See login screen
 I.see("Please login to continue");

@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////////
 //
-//  test case : Error message during creation of cases with missing blank fields
+//  test case : Test for an expected unit name, and case name
 //
 ////////////////////////////////////////////////////////////////////////////////////
 
@@ -8,6 +8,12 @@
 TEST.run("data-config");
 TEST.run("case/auth/valid-login");
 
-I.see("Demo Unit - 13-06");
-I.dontSee("Demo Unit - 13-06-123-84");
-I.dontSee("Demo Unit - 13-06-556");
+// Lets go to the case page - and use the menu
+I.goTo("/case");
+
+// See the expected unit and case
+I.click("Demo Unit - 13-06");
+I.click("Demo Open Case");
+
+// See invite user
+I.see("Invite User");

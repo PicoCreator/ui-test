@@ -55,7 +55,7 @@ function loginAccount(email, pass) {
 	// I.see("Welcome"); // This does not display in mobile view
 	I.dontSee("Login");
 	I.see("Open");
-	I.see("Closed");
+	//I.see("Closed");
 }
 
 /**
