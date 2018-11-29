@@ -24,4 +24,4 @@ then
 fi
 
 # Export the project to the current directory
-uilicious-cli run -u "$UILICIOUS_EMAIL" -p "$UILICIOUS_PASS" "$UILICIOUS_PROJ" "$TEST_FILE"
+./uilicious-cli run -u "$UILICIOUS_EMAIL" -p "$UILICIOUS_PASS" "$UILICIOUS_PROJ" "$TEST_FILE" $UILICIOUS_CLIFLAGS
