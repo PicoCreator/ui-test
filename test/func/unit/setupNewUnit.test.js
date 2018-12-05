@@ -60,5 +60,5 @@ function setupNewUnit(opt) {
 	//
 	// List of cases
 	//
-	I.see("CASES (0)");
+	I.must.see("CASES (0)");
 }

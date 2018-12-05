@@ -1,9 +1,6 @@
 ////////////////////////////////////////////////
 //
-//  test case : valid-signup
-//
-//  Properly performing and 
-//  testing the signup process
+//  Authentication utility functions
 //
 ////////////////////////////////////////////////
 
@@ -34,7 +31,6 @@ function resetSession() {
 }
 
 /**
- *
  * Login macro function, this forcefully clear the cookie
  * prior to executing the required login steps
  *
@@ -51,10 +47,18 @@ function loginAccount(email, pass) {
 	I.fill("Password", pass  || DATA.pass  );
 	I.click("Login");
 
-	// Validate welcome message
-	// I.see("Welcome"); // This does not display in mobile view
-	I.dontSee("Login");
-	I.see("Open");
+	// Does a login redirection check
+	if( !I.dontSee("Login") ) {
+		// Looping the login button check (in case of slowdown)
+		for( let i=0; i<10; ++i ) {
+			if( I.dontSee$("Login") ) {
+				break;
+			}
+			TEST.log.info("WARNING : Login is taking much longer then expected");
+		}
+	}
+
+	I.must.see("Open");
 	//I.see("Closed");
 }
 
@@ -76,11 +80,11 @@ function getUniqueTestEmail(type) {
 }
 
 /**
- *
  * Signup for a given test account, given the account type
  *
  * @param   type   type of account to signup for
- *
+ * 
+ * @return  the final email string generated
  */
 function signupUniqueTestAccount(type) {
 	// Get the test email
@@ -106,14 +110,25 @@ function signupUniqueTestAccount(type) {
 	// Submit the form
 	I.click("SUBMIT");
 
-	// See dashboard
-	I.dontSee("SUBMIT");
-	I.see("My Units");
+	// Do not see the signup
+	if( !I.dontSee("SUBMIT") ) {
+		// Looping the submit button check (in case of slowdown)
+		for( let i=0; i<10; ++i ) {
+			if( I.dontSee$("SUBMIT") ) {
+				break;
+			}
+			TEST.log.info("WARNING : Signup is taking much longer then expected");
+		}
+	}
+
+	// My units header
+	I.must.see("My Units");
 	//I.see("ALL UNITS");
+
+	return testEmail;
 }
 
 /**
- *
  * Signup for a given test account, given the account type
  *
  * @param   type   type of account to signup for

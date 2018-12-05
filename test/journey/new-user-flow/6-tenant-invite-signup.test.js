@@ -13,8 +13,16 @@ TEST.requireOnce("journey/new-user-flow/5-owner-logout");
 //
 gotoMailBox( getUniqueTestEmail("tenant") );
 
+// Slower loop to iterate 
+for(let i=0; i<10; ++i) {
+	if( I.see$("New Case") ) {
+		break;
+	}
+	I.wait(5);
+}
+
 // Wait for email, and click it
-I.see("New Case");
+I.must.see("New Case");
 I.click("New Case");
 
 // Click on the link
@@ -25,7 +33,7 @@ I.click("this link");
 //
 // See the welcome message
 //
-I.dontSee("Mailinator");
+I.dontSee("inboxkitten");
 I.see("Welcome");
 I.see("Let's enter your name to begin");
 
