@@ -48,10 +48,14 @@ function loginAccount(email, pass) {
 	I.click("Login");
 
 	// Does a login redirection check
-	if( !I.dontSee("Login") ) {
+	I.dontSee("Login")
+
+
+	// Looping through the "Open" check
+	if( !I.see("Open") ) {
 		// Looping the login button check (in case of slowdown)
 		for( let i=0; i<10; ++i ) {
-			if( I.dontSee$("Login") ) {
+			if( I.see$("Open") ) {
 				break;
 			}
 			TEST.log.info("WARNING : Login is taking much longer then expected");
@@ -111,10 +115,12 @@ function signupUniqueTestAccount(type) {
 	I.click("SUBMIT");
 
 	// Do not see the signup
-	if( !I.dontSee("SUBMIT") ) {
-		// Looping the submit button check (in case of slowdown)
+	I.dontSee("SUBMIT");
+
+	// Looping through the "My Units" check
+	if( !I.see("My Units") ) {
 		for( let i=0; i<10; ++i ) {
-			if( I.dontSee$("SUBMIT") ) {
+			if( I.see$("My Units") ) {
 				break;
 			}
 			TEST.log.info("WARNING : Signup is taking much longer then expected");
