@@ -33,7 +33,7 @@ I.click("this link");
 //
 // See the welcome message
 //
-I.dontSee("inboxkitten");
+I.must.amAt(DATA.site);
 I.see("Welcome");
 I.see("Let's enter your name to begin");
 
