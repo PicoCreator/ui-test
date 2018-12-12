@@ -25,6 +25,19 @@ for(let i=0; i<10; ++i) {
 I.must.see("New Case");
 I.click("New Case");
 
+// Im still on the inbox kitten page after clicking - try again
+if( I.amAt$( getMailboxUrl( getUniqueTestEmail("tenant") ) ) ) {
+	TEST.log.info("WARNING : Inboxkitten click failed - trying again");
+
+	// Going to the inbox
+	gotoMailBox( getUniqueTestEmail("tenant") );
+
+	// Waiting and clicking
+	I.wait(5);
+	I.must.see("New Case");
+	I.click("New Case");
+}
+
 // Click on the link
 I.see("If the above link does not work, copy paste this in your browser:");
 I.see("Please click on this link to get more information");

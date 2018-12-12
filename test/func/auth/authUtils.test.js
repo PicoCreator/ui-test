@@ -146,10 +146,26 @@ function loginUniqueTestAccount(type) {
 }
 
 /**
- * Goto mailnator account
+ * Goto inboxkitten account
  */
 function gotoMailBox(email) {
-	let emailPrefix = email.split("@")[0];
-	I.goTo("https://inboxkitten.com/inbox/"+(""+emailPrefix).toLowerCase()+"/list");
+	I.goTo( getMailboxUrl(email) );
 	I.wait(5);
+}
+
+/**
+ * Get inboxkitten inbox key
+ * @param {*} email 
+ * @return inboxkitten, inbox key
+ */
+function getMailboxKey(email) {
+	let emailPrefix = email.split("@")[0];
+	return (""+emailPrefix).toLowerCase();
+}
+
+/**
+ * Inboxkitten URL for list
+ */
+function getMailboxUrl(email) {
+	return "https://inboxkitten.com/inbox/"+getMailboxKey(email)+"/list";
 }
