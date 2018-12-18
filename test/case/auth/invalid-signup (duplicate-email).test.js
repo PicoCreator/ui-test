@@ -19,9 +19,9 @@ I.goTo( DATA.site );
 I.click( "Sign Up" );
 
 // Fill up the form
-I.fill("Name", DATA.email );
-I.fill("Phone", "98765432" );
-I.fill("Country", "Singapore" );
+// I.fill("Name", DATA.email );
+// I.fill("Phone", "98765432" );
+// I.fill("Country", "Singapore" );
 I.fill("Email", DATA.email );
 I.fill("Password", DATA.email );
 

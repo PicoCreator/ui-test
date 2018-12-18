@@ -8,6 +8,10 @@
 TEST.run("data-config");
 TEST.requireOnce("journey/new-user-flow/1-owner-signup");
 
+// Make sure that there is no units appended to a new account
+// I.count("[UI-TEST]",1);
+I.dontSee("[UI-Test]");
+
 //
 // Click add
 //

@@ -13,3 +13,4 @@ TEST.run("func/auth/authUtils");
 
 // Perform the login
 signupUniqueTestAccount( "singup-test" );
+I.dontSee("[UI-Test]");

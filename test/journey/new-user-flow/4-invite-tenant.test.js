@@ -38,5 +38,7 @@ I.click("tenant");
 I.click("The Tenant is also the occupant");
 I.click("Send invitation");
 
+I.wait(10s);
+
 I.see("We just sent an invite");
 I.click("close");
