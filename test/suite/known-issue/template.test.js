@@ -15,3 +15,9 @@ TEST.run("case/case-management/case-name-match");
 
 // Firefox - invite button
 // [Covered by user journey]
+
+// Multplie user invite
+TEST.run("case/bugs/multiple-user-invites");
+
+// Search by case number
+TEST.run("case/bugs/search-case.test.js");
