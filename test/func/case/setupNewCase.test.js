@@ -52,7 +52,7 @@ function setupNewCase(opt) {
 	}
 
 	// Occupant assignment flag
-	if( opt.isOccupant ) {
+	if( opt.isOccupant && I.see$("is also the occupant of this unit") ) {
 		I.click("is also the occupant of this unit");
 	}
 
