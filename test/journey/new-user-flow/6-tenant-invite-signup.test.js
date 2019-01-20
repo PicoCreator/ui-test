@@ -44,17 +44,19 @@ I.see("Please click on this link to get more information");
 I.click("this link");
 
 //
-// See the welcome message
+// Fill up the welcome message if it appears
+// This message is being removed as of 
+//
+// https://github.com/unee-t/frontend/pull/681/files
 //
 I.must.amAt(DATA.site);
-I.see("Welcome");
-I.see("Let's enter your name to begin");
+if( I.see$("Let's enter your name to begin") ) {
+	// Lets fill in tenant details
+	I.fill("First Name", "The");
+	I.fill("Last name", "Tenant");
 
-// Lets fill in tenant details
-I.fill("First Name", "The");
-I.fill("Last name", "Tenant");
-
-// And submit
-I.click("Join Case");
-I.dontSee("Let's enter your name to begin");
+	// And submit
+	I.click("Join Case");
+	I.dontSee("Let's enter your name to begin");
+}
 

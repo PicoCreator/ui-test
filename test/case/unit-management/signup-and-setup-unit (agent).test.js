@@ -12,6 +12,9 @@ TEST.requireOnce("func/unit/setupNewUnit");
 // Lets get the agent signed up
 signupUniqueTestAccount("um-agent"+(DATA.umSuffix || ""));
 
+// Make sure that there is no units appended to a new account
+I.dontSee("[UI-Test]");
+
 // Click the add unit button
 I.click("add");
 
