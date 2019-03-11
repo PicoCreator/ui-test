@@ -10,15 +10,15 @@ TEST.requireOnce("func/auth/authUtils");
 TEST.requireOnce("func/case/setupNewCase");
 
 // Signup as new owner
-DATA.umSuffix = "-cmm";
-TEST.run("case/unit-management/signup-and-setup-unit (owner)");
+DATA.umSuffix = "-cmc";
+TEST.run("case/unit-management/signup-and-setup-unit [owner]");
 
 // Add a case
 I.click("add");
 
 // Setup new case details
 setupNewCase( {
-	assign : "management",
-	assignEmail : getUniqueTestEmail("cmi-management"),
+	assign : "contractor",
+	assignEmail : getUniqueTestEmail("cmi-contractor"),
 	isOccupant : false
 } );

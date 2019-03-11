@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
 //
-//  test case : owner create case and assign and invite agent
+//  test case : owner create case and assign and invite tenant
 //
 //////////////////////////////////////////////////////////////////////
 
@@ -10,15 +10,15 @@ TEST.requireOnce("func/auth/authUtils");
 TEST.requireOnce("func/case/setupNewCase");
 
 // Signup as new owner
-DATA.umSuffix = "-cma";
-TEST.run("case/unit-management/signup-and-setup-unit (owner)");
+DATA.umSuffix = "-cmt";
+TEST.run("case/unit-management/signup-and-setup-unit [owner]");
 
 // Add a case
 I.click("add");
 
 // Setup new case details
 setupNewCase( {
-	assign : "agent",
-	assignEmail : getUniqueTestEmail("cmi-agent"),
-	isOccupant : false
+	assign : "tenant",
+	assignEmail : getUniqueTestEmail("cmi-tenant"),
+	isOccupant : true
 } );

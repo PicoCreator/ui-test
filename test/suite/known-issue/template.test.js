@@ -21,3 +21,6 @@ TEST.run("case/bugs/multiple-user-invites");
 
 // Search by case number
 TEST.run("case/bugs/search-case.test.js");
+
+// Emoji in text/chat 
+TEST.run("case/bugs/emoji.test.js");

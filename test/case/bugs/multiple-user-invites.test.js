@@ -29,5 +29,5 @@ I.see("We just sent an invite");
 I.click("Invite more users");
 
 // Validate that the textfield has been reset 
-I.dontSee("@inboxkitten.com");
+// I.dontSee("@inboxkitten.com");
 I.see("Type the email address");
